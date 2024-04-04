@@ -17,7 +17,7 @@ const Aboutus = () => {
 </div>
 </Col>
 <Col lg={6} className=' col-12 mt-lg-0  mt-sm-4 mt-3  '>
-  <div className=' ms-lg-auto max-w-521 mx-auto'>
+  <div className=' ms-auto max-w-521 me-auto me-lg-0'>
 <p className=' d-flex  align-items-center ff-exo fw-normal fs-sm lh-24 mb-0 gap-6 justify-content-center  justify-content-lg-start ' data-aos="zoom-in">
     <span><Pagestar/></span>
    <span> About us</span>
