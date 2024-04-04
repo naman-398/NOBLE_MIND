@@ -20,7 +20,7 @@ const Loadersection = () => {
                 <div className='d-flex align-items-center justify-content-center vh-100 position-relative p-5 '>
                     <div className=' d-flex flex-column gap-4 justify-content-center align-items-center'>
                     <img src={pagelogo} alt=""  className=' loaderimg'/>
-                    <div class="loader">
+                    <div className="loader">
   <div></div>
   <div></div>
   <div></div>

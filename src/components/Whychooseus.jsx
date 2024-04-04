@@ -84,7 +84,7 @@ const Whychooseus = () => {
         const isCenter = index === centerSlideIndex;
 
         return (
-            <div key={index} className=' px-2 h-100 min-h-208' data-aos="zoom-in">
+            <div key={index} className=' px-2 h-100 min-h-208'>
                 <div className={`slider-card w-100 h-100 mx-auto overflow-hidden position-relative z-1  ${isCenter ? 'centered-card' : ''}`}>
                     <div className='slider-cricle1 d-flex align-items-center justify-content-center fw-bold ff-outfit mb-0'>{index + 1}</div>
                     <p className='ff-outfit fs-md fw-normal lh-25 page-black mt-11 mb-1'>{cardProps[index].title}</p>
@@ -98,19 +98,19 @@ const Whychooseus = () => {
     };
   
     return (
-        <div className=' section-between-padding position-relative' id="why">
+        <div className=' section-between-padding position-relative' id="why"  data-aos="zoom-in">
       <img src={elipse3} alt="elipse" className=' position-absolute elipse-size elipse3' />
       <img src={elipse3} alt="elipse" className=' position-absolute elipse-size elipse4' />
             <Container>
-                <p className='d-flex align-items-center ff-exo fw-normal fs-sm lh-24 mb-0 gap-6 justify-content-center' data-aos="zoom-in">
+                <p className='d-flex align-items-center ff-exo fw-normal fs-sm lh-24 mb-0 gap-6 justify-content-center'  data-aos="zoom-in">
                     <span><Pagestar /></span>
                     <span> Why Choose Us</span>
                 </p>
-                <h2 className='fs-lg lh-57 ff-outfit fw-light mt-sm-2 mt-1 mb-sm-3 mb-2 text-center' data-aos="zoom-in">Driving Innovation & <span className='fw-bolder d-block'>Transforming Industries</span></h2>
+                <h2 className='fs-lg lh-57 ff-outfit fw-light mt-sm-2 mt-1 mb-sm-3 mb-2 text-center'  data-aos="zoom-in">Driving Innovation & <span className='fw-bolder d-block'>Transforming Industries</span></h2>
                 <Slider {...settings} className=' slider-mt'>
                     {Array.from({ length: 3 }, (_, i) => renderSliderCard(i))}
                 </Slider>
-                <div className=' sliderimg-card overflow-hidden' data-aos="zoom-in">
+                <div className=' sliderimg-card overflow-hidden'  data-aos="zoom-in">
 <img src={sliderbigimg} alt="sliderbigimg" className=' w-100 h-100 slider-bigimg' />
                 </div>
             </Container>
