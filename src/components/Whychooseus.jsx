@@ -68,25 +68,28 @@ const Whychooseus = () => {
     const renderSliderCard = (index) => {
         const cardProps = [
             {
+                number:"3",
+                title: 'Ethical Leadership',
+                content: 'Maintain the highest standards in all practices, ensuring our solutions are responsible, safe, and transparent.',
+            },
+            {
+                number:"1",
                 title: 'Customer-Centric',
                 content: 'Prioritize and anticipate client needs, ensuring our technology solutions consistently deliver unparalleled value.',
             },
             {
+                number:"2",
                 title: 'Workplace Harmony',
                 content: 'Create a nurturing and peaceful environment for our staff, fostering growth, well-being, and unity. We are more than a team; we are a family.',
-            },
-            {
-                title: 'Ethical Leadership',
-                content: 'Maintain the highest standards in all practices, ensuring our solutions are responsible, safe, and transparent.',
             },
         ];
 
         const isCenter = index === centerSlideIndex;
 
         return (
-            <div key={index} className=' px-2 h-100 min-h-208'>
+            <div key={index} className=' px-3 h-100 min-h-208'>
                 <div className={`slider-card w-100 h-100 mx-auto overflow-hidden position-relative z-1  ${isCenter ? 'centered-card' : ''}`}>
-                    <div className='slider-cricle1 d-flex align-items-center justify-content-center fw-bold ff-outfit mb-0'>{index + 1}</div>
+                    <div className='slider-cricle1 d-flex align-items-center justify-content-center fw-bold ff-outfit mb-0'>{cardProps[index].number}</div>
                     <p className='ff-outfit fs-md fw-normal lh-25 page-black mt-11 mb-1'>{cardProps[index].title}</p>
                     <p className='ff-exo fw-normal fs-sm lh-24 page-black opacity-70 mb-0 slider-para'>{cardProps[index].content}</p>
                     <span>
@@ -107,7 +110,7 @@ const Whychooseus = () => {
                     <span> Why Choose Us</span>
                 </p>
                 <h2 className='fs-lg lh-57 ff-outfit fw-light mt-sm-2 mt-1 mb-sm-3 mb-2 text-center'  data-aos="zoom-in">Driving Innovation & <span className='fw-bolder d-block'>Transforming Industries</span></h2>
-                <Slider {...settings} className=' slider-mt'>
+                <Slider {...settings} className=' slider-mt '>
                     {Array.from({ length: 3 }, (_, i) => renderSliderCard(i))}
                 </Slider>
                 <div className=' sliderimg-card overflow-hidden'  data-aos="zoom-in">
