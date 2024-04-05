@@ -42,7 +42,7 @@ const Footer = () => {
                 </Row>
             </Container>
             <hr  className=' footerline'/>
-            <p className=' ff-exo fw-normal text-center text-white mb-0 footer-btm-para'>© Copyright 2024 Noble Mind | All rights reserved. </p>
+            <p className=' ff-exo fw-normal text-center text-white mb-0 footer-btm-para opacity-70'>© Copyright 2024 Noble Mind | All rights reserved. </p>
         </div>
     )
 }
